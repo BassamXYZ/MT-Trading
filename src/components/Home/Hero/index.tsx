@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section
       className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1"
-      id="main-banner"
+      id="about"
     >
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid grid-cols-12">
@@ -68,19 +68,19 @@ const Hero = () => {
                 height={40}
               />
               <p className="text-white sm:text-28 text-18 mb-0">
-                Crypto On The <span className="text-primary">Go</span>
+                شركتك الرائدة في <span className="text-primary">سوريا</span>
               </p>
             </div>
             <h1 className="font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10">
-              Buy and Sell <span className="text-primary">Crypto</span> of your{" "}
-              <span className="text-primary">choice</span>!
+              للإستثمار والتداول في <span className="text-primary">سوق الفوركس</span> والعملات{" "}
+              <span className="text-primary">الرقمية</span>
             </h1>
             <div className="flex items-center md:justify-start justify-center gap-8">
               <button
                 className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50"
                 onClick={() => setIsBuyingOpen(true)}
               >
-                Buy Crypto
+                تعرف على المزيد
               </button>
             </div>
           </motion.div>

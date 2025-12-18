@@ -15,7 +15,7 @@ const TimeLine = () => {
     transition: { duration: 0.6, delay: 0.4 },
   };
   return (
-    <section className="md:pt-40 pt-9 pb-8" id="development">
+    <section className="md:pt-40 pt-9 pb-8" id="features">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md lg:px-16 px-4">
         <div className="text-center">
           <motion.div
@@ -24,11 +24,10 @@ const TimeLine = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-muted sm:text-28 text-18 mb-9">
-              Development <span className="text-primary">timeline</span>
+              ما <span className="text-primary">يميزنا</span> عن غيرنا
             </p>
             <h2 className="text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto mb-20">
-              We can enter at any point or help you all the way through the
-              development cycle.
+              أننا دائما نسعى جاهدين لنتميز ولننال رضاكم ونساعدكم بتحقيق مستقبل أفضل
             </h2>
           </motion.div>
           <motion.div
@@ -48,9 +47,9 @@ const TimeLine = () => {
               </div>
               <div className="absolute lg::top-40 top-36 lg:left-0 -left-4 w-72 flex items-center gap-6">
                 <div className="text-right">
-                  <h5 className="text-muted text-28 mb-3">Planning</h5>
+                  <h5 className="text-muted text-28 mb-3">الأمان</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Map the project's scope and architecture
+                    حسابات بإيميلك وموثقة بجواز سفرك السوري
                   </p>
                 </div>
                 <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
@@ -73,17 +72,17 @@ const TimeLine = () => {
                   />
                 </div>
                 <div className="text-left">
-                  <h5 className="text-muted text-28 mb-3">Refinement</h5>
+                  <h5 className="text-muted text-28 mb-3">توصيات</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Refine and improve your solution
+                    نقدم توصيات واستشارات حصرية من خبراء المجال
                   </p>
                 </div>
               </div>
               <div className="absolute lg:bottom-48 bottom-36 lg:left-0 -left-4 w-72 flex items-center gap-6">
                 <div className="text-right">
-                  <h5 className="text-muted text-28 mb-3">Prototype</h5>
+                  <h5 className="text-muted text-28 mb-3">سحب وإيداع</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Build a working prototype to test your product
+                    اسحب أو أودع أموالك معنا بأي طريقة تناسبك
                   </p>
                 </div>
                 <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
@@ -108,10 +107,10 @@ const TimeLine = () => {
                 </div>
                 <div className="text-left">
                   <h5 className="text-muted text-nowrap text-28 mb-3">
-                    Support
+                    خدمة عملاء
                   </h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Deploy the product and ensure full support by us
+                    متواجدين معكم دائما للمساعدة في كل الأوقات
                   </p>
                 </div>
               </div>
