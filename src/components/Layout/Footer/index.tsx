@@ -13,7 +13,7 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-12 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16">
           <div className="lg:col-span-4 md:col-span-6 col-span-6">
             <Logo />
-            <div className="flex gap-6 items-center mt-8">
+            <div className="flex gap-6 items-center mt-6">
               <Link href="#" className="group">
                 <Icon
                   icon="fa6-brands:facebook-f"
@@ -22,7 +22,7 @@ const Footer: FC = () => {
                   className="text-white group-hover:text-primary"
                 />
               </Link>
-              <Link href="#" className="group">
+              <Link href="https://www.instagram.com/m.ttrading/" className="group" target="_blank">
                 <Icon
                   icon="fa6-brands:instagram"
                   width="24"
@@ -39,10 +39,10 @@ const Footer: FC = () => {
                 />
               </Link>
             </div>
-            <h3 className="text-white text-24 font-medium sm:mt-20 mt-12">
+            <h3 className="text-white text-18 font-medium mt-6">
               2025 Copright | Crypgo
             </h3>
-            <h3 className="text-white text-24 font-medium sm:mt-20 mt-12">
+            <h3 className="text-white text-18 font-medium mt-6">
               Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
             </h3>
           </div>
