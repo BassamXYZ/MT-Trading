@@ -38,7 +38,7 @@ const TimeLine = () => {
             <div className="md:block hidden relative">
               <div>
                 <Image
-                  src={`${getImagePrefix()}images/timeline/img-timeline.png`}
+                  src={`${getImagePrefix()}images/timeline/img-timeline.png`} //////////////
                   alt="image"
                   width={610}
                   height={500}
@@ -52,13 +52,13 @@ const TimeLine = () => {
                     حسابات بإيميلك وموثقة بجواز سفرك السوري
                   </p>
                 </div>
-                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
+                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-4 py-2 h-fit rounded-full">
                   <Image
                     src={`${getImagePrefix()}images/timeline/icon-planning.svg`}
                     alt="Planning"
                     width={44}
                     height={44}
-                    className="w-16 h-16 "
+                    className="w-16 h-16"
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ const TimeLine = () => {
                     اسحب أو أودع أموالك معنا بأي طريقة تناسبك
                   </p>
                 </div>
-                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
+                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-4 py-2 h-fit rounded-full">
                   <Image
                     src={`${getImagePrefix()}images/timeline/icon-prototype.svg`}
                     alt="Prototype"
@@ -96,7 +96,7 @@ const TimeLine = () => {
                 </div>
               </div>
               <div className="absolute lg:bottom-48 bottom-36 lg:right-0 -right-4 w-72 flex items-center gap-6">
-                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
+                <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-4 py-2 h-fit rounded-full">
                   <Image
                     src={`${getImagePrefix()}images/timeline/icon-support.svg`}
                     alt="Scale and support"

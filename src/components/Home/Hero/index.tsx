@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import BuyCrypto from "./buy-form";
@@ -38,14 +37,14 @@ const Hero = () => {
     document.body.style.overflow = isBuying || isSelling ? "hidden" : "";
   }, [isBuying, isSelling]);
 
-  const leftAnimation = {
+  const rightAnimation = {
     initial: { x: "-100%", opacity: 0 },
     animate: { x: 0, opacity: 1 },
     exit: { x: "-100%", opacity: 0 },
     transition: { duration: 0.6 },
   };
 
-  const rightAnimation = {
+  const leftAnimation = {
     initial: { x: "100%", opacity: 0 },
     animate: { x: 0, opacity: 1 },
     exit: { x: "100%", opacity: 0 },
@@ -55,7 +54,7 @@ const Hero = () => {
   return (
     <section
       className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1"
-      id="about"
+      id="about" dir="rtl"
     >
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid grid-cols-12">
@@ -89,7 +88,7 @@ const Hero = () => {
             {...rightAnimation}
             className="col-span-7 lg:block hidden"
           >
-            <div className="ml-20 -mr-64">
+            <div className="-mr-40 -ml-20">
               <Image
                 src={`${getImagePrefix()}images/hero/banner-image.png`}
                 alt="Banner"

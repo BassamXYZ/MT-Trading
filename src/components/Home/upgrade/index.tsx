@@ -5,7 +5,7 @@ import { getImagePrefix } from "@/utils/utils";
 
 const Upgrade = () => {
   return (
-    <section className="md:pt-48 sm:pt-28 pt-12 pb-8" id="upgrade">
+    <section className="md:pt-48 sm:pt-28 pt-12 pb-8" id="upgrade" dir="rtl">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid lg:grid-cols-2 sm:gap-0 gap-10 items-center">
           <div>
@@ -44,7 +44,7 @@ const Upgrade = () => {
                 alt="image"
                 width={625}
                 height={580}
-                className="-mr-5"
+                className="-ml-5"
               />
             </div>
           </div>

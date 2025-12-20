@@ -36,7 +36,7 @@ const Work = () => {
   ];
 
   return (
-    <section className="md:pt-28 pt-8" id="services">
+    <section className="md:pt-28 pt-8" id="services" dir="rtl">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div ref={ref} className="grid grid-cols-12 items-center">
           <motion.div
@@ -66,7 +66,7 @@ const Work = () => {
             </div>
           </motion.div>
           <motion.div {...TopAnimation} className="lg:col-span-5 col-span-12">
-            <div className="2xl:-mr-40 mt-9 flex justify-center">
+            <div className="2xl:-ml-40 mt-9 flex justify-center">
               <Image
                 src={`${getImagePrefix()}images/work/img-work-with-us.png`}
                 alt="image"
