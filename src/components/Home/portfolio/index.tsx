@@ -13,7 +13,7 @@ const Portfolio = () => {
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.6 }}
-            className="lg:-mr-32"
+            className="md:-mr-32"
           >
             <Image
               src={`${getImagePrefix()}images/portfolio/img-portfolio.png`}
