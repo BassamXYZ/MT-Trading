@@ -40,10 +40,10 @@ const Footer: FC = () => {
               </Link>
             </div>
             <h3 className="text-white text-18 font-medium mt-6">
-              2025 Copright | Crypgo
+              2025 Copright | MT Trading
             </h3>
             <h3 className="text-white text-18 font-medium mt-6">
-              Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              Distributed by AlgorithmArabic 2026
             </h3>
           </div>
           <div className="lg:col-span-2 md:col-span-6 col-span-6">
