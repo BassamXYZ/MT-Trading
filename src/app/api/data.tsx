@@ -89,23 +89,23 @@ export const pricedeta: {
 export const portfolioData: { image: string; title: string }[] = [
   {
     image: "/images/portfolio/icon-wallet.svg",
-    title: "Manage your portfolio",
+    title: "نضع أهدافك أولاً",
   },
   {
     image: "/images/portfolio/icon-vault.svg",
-    title: "Vault protection",
+    title: " ندعمك باستراتيجيات مفهومة",
   },
   {
     image: "/images/portfolio/icon-mobileapp.svg",
-    title: "Mobile apps",
+    title: " نقدم نتائج قابلة للقياس",
   },
 ];
 
 export const upgradeData: { title: string }[] = [
-  { title: "100% Secure" },
-  { title: "A Fraction of the Cost" },
-  { title: "More Durable" },
-  { title: "Easier to Use" },
+  { title: "تنفيذ سريع" },
+  { title: "توصيات من خبراء" },
+  { title: "دعم احترافي مستمر" },
+  { title: "انطلق بثقة نحو أسواق المال." },
 ];
 
 export const perksData: {

@@ -6,6 +6,7 @@ import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+import Platform from "@/components/Home/platform";
 export const metadata: Metadata = {
   title: "MT Trading",
 };
@@ -16,9 +17,10 @@ export default function Home() {
       <Hero />
       <Work />
       <TimeLine />
-      <Portfolio /> {/*///////////*/}
-      <Upgrade /> {/*///////////*/}
-      <Perks /> {/*///////////*/}
+      <Portfolio />
+      <Upgrade />
+      <Perks />
+      <Platform />
     </main>
   );
 }

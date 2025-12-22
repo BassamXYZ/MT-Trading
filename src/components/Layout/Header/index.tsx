@@ -42,7 +42,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-40 w-full pb-5 transition-all duration-300 ${sticky ? " shadow-lg bg-darkmode pt-5" : "shadow-none md:pt-14 pt-5"
-        }`}
+        }`} dir="rtl"
     >
       <div className="lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
@@ -159,8 +159,6 @@ const Header: React.FC = () => {
             <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
               <Logo />
             </h2>
-
-            {/*  */}
             <button
               onClick={() => setNavbarOpen(false)}
               className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"

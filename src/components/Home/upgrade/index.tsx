@@ -9,13 +9,12 @@ const Upgrade = () => {
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid lg:grid-cols-2 sm:gap-0 gap-10 items-center">
           <div>
-            <p className="text-primary sm:text-28 text-18 mb-3">Upgrade</p>
+            <p className="text-primary sm:text-28 text-18 mb-3">اتصل بنا</p>
             <h2 className="text-white sm:text-40 text-30  font-medium mb-5">
-              Upgrade Your Storage Layer
+              ابدأ طريقك نحو تداول أكثر ذكاءً وأرباحاً متزايدة.
             </h2>
             <p className="text-muted text-opacity-60 text-18 mb-7">
-              Get faster, safer, more affordable cloud object storage with no
-              centeral point of failure.
+              افتح حسابك مع MT Trading اليوم وتمتع بالميزات التالية
             </p>
             <div className="grid sm:grid-cols-2 lg:w-70% text-nowrap sm:gap-10 gap-5">
               {upgradeData.map((item, index) => (
