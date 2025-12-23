@@ -142,26 +142,26 @@ export const timelineData: {
 }[] = [
     {
       icon: "/images/timeline/icon-planning.svg",
-      title: "Planning",
-      text: "Map the project's scope and architecture",
+      title: "الأمان",
+      text: " حسابات بإيميلك وموثقة بجواز سفرك السوري",
       position: "md:top-0 md:left-0",
     },
     {
       icon: "/images/timeline/icon-refinement.svg",
-      title: "Refinement",
-      text: "Refine and improve your solution",
+      title: "توصيات",
+      text: "نقدم توصيات واستشارات حصرية من خبراء المجال",
       position: "md:top-0 md:right-0",
     },
     {
       icon: "/images/timeline/icon-prototype.svg",
-      title: "Prototype",
-      text: "Build a working prototype to test your product",
+      title: "سحب وإيداع",
+      text: "اسحب أو أودع أموالك معنا بأي طريقة تناسبك",
       position: "md:bottom-0 md:left-0",
     },
     {
       icon: "/images/timeline/icon-support.svg",
-      title: "Support",
-      text: "Deploy the product and ensure full support by us",
+      title: "خدمة عملاء",
+      text: "متواجدين معكم دائما للمساعدة في كل الأوقات",
       position: "md:bottom-0 md:right-0",
     },
   ];
