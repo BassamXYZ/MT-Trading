@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,8 @@ import { getImagePrefix } from "@/utils/utils";
 
 const CardSlider = () => {
   const [priceData, setPriceData] = useState([]);
-  const [call, setCall] = useState(0);
+  const hasFetchedRef = useRef(false);
+
 
   const assetConfig = [
     {
@@ -71,12 +72,15 @@ const CardSlider = () => {
     ],
   };
 
-  // Function to fetch data from Massive API
+
   const fetchMarketData = async () => {
+    if (hasFetchedRef.current) return;
+    hasFetchedRef.current = true;
+
     const API_KEY = process.env.NEXT_PUBLIC_MASSIVE_API_KEY;
     const BASE_URL = 'https://api.massive.com/v1';
     const date = new Date(Date.now() - 86400000 * 2).toISOString().split('T')[0];
-    console.log(date)
+
     try {
       const promises = assetConfig.map(async (asset) => {
         try {
@@ -115,9 +119,8 @@ const CardSlider = () => {
     }
   };
 
-  // Fetch data on component mount and set up refresh interval
   useEffect(() => {
-    return () => fetchMarketData();
+    fetchMarketData();
   }, []);
 
   return (
