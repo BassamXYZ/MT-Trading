@@ -4,5 +4,6 @@ const getImagePrefix = () => {
     : "";
 };
 
+
 export { getImagePrefix };
  

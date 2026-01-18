@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import BuyCrypto from "./buy-form";
-import SellCrypto from "./sell-form";
 import CardSlider from "./slider";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -10,20 +9,15 @@ import { getImagePrefix } from "@/utils/utils";
 
 const Hero = () => {
   const [isBuying, setIsBuyingOpen] = useState(false);
-  const [isSelling, setIsSellingOpen] = useState(false);
   const BuyRef = useRef<HTMLDivElement>(null);
-  const SellRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = useCallback(
     (event: MouseEvent) => {
       if (BuyRef.current && !BuyRef.current.contains(event.target as Node)) {
         setIsBuyingOpen(false);
       }
-      if (SellRef.current && !SellRef.current.contains(event.target as Node)) {
-        setIsSellingOpen(false);
-      }
     },
-    [BuyRef, SellRef]
+    [BuyRef]
   );
 
   useEffect(() => {
@@ -34,8 +28,8 @@ const Hero = () => {
   }, [handleClickOutside]);
 
   useEffect(() => {
-    document.body.style.overflow = isBuying || isSelling ? "hidden" : "";
-  }, [isBuying, isSelling]);
+    document.body.style.overflow = isBuying ? "hidden" : "";
+  }, [isBuying]);
 
   const rightAnimation = {
     initial: { x: "-100%", opacity: 0 },
@@ -102,7 +96,6 @@ const Hero = () => {
       </div>
       <div className="absolute w-50 h-50 bg-gradient-to-bl from-tealGreen from-50% to-charcoalGray to-60% blur-400 rounded-full -top-64 -right-14 -z-1"></div>
 
-      {/* Modals for Buy and Sell */}
       {isBuying && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div
@@ -120,26 +113,6 @@ const Hero = () => {
               />
             </button>
             <BuyCrypto />
-          </div>
-        </div>
-      )}
-      {isSelling && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div
-            ref={SellRef}
-            className="relative w-full max-w-md overflow-hidden rounded-lg px-8 pt-14 pb-8 z-999 text-center bg-dark_grey bg-opacity-90 backdrop-blur-md"
-          >
-            <button
-              onClick={() => setIsSellingOpen(false)}
-              className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
-              aria-label="Close Sell Modal"
-            >
-              <Icon
-                icon="tabler:currency-xrp"
-                className="text-white hover:text-primary text-24 inline-block me-2"
-              />
-            </button>
-            <SellCrypto />
           </div>
         </div>
       )}
