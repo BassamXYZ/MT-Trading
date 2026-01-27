@@ -15,27 +15,24 @@ const CardSlider = () => {
       symbol: 'C:XAUUSD',
       title: 'Gold',
       short: 'XAU',
-      icon: '/path/to/gold-icon.svg',
       background: 'bg-yellow-500',
     },
     {
       symbol: 'C:EUR-USD',
       title: 'Euro',
       short: 'EUR',
-      icon: '/path/to/euro-icon.svg',
       background: 'bg-blue-500',
     },
     {
       symbol: 'C:GBP-USD',
       title: 'British Pound',
       short: 'GBP',
-      icon: '/path/to/gbp-icon.svg',
       background: 'bg-red-500',
     },
     {
       symbol: 'C:XAGUSD',
       title: 'Silver',
-      icon: '/path/to/silver-icon.svg',
+      short: 'XAG',
       background: 'bg-gray-400',
     }
   ];
@@ -133,16 +130,10 @@ const CardSlider = () => {
                 <div
                   className={`${item.background} p-2 rounded-full`}
                 >
-                  <Image
-                    src={`${getImagePrefix()}${item.icon}`}
-                    alt="icon"
-                    width={24}
-                    height={24}
-                  />
+                  {item.short}
                 </div>
                 <p className="text-white text-xs font-normal ">
                   <span className="text-16 font-bold mr-2">{item.title}</span>
-                  {item.short}
                 </p>
               </div>
               <div className="flex justify-between mt-7">
