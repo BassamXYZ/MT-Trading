@@ -8,10 +8,10 @@ const Perks = () => {
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="text-center">
           <p className="text-muted sm:text-28 text-18 mb-4 pb-6 relative after:content-[''] after:w-8 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-1/2">
-            عنوان <span className="text-primary"> فرعي</span>
+            أفضل منصة للتداول
           </p>
-          <h2 className="text-white sm:text-40 text-30 font-medium">
-            عنوان قسم يمكن تعديله
+          <h2 dir="rtl" className="text-white sm:text-40 text-30 font-medium">
+            منصة <span className="text-primary">MetaTrader 5</span>
           </h2>
           <div className="mt-16 border border-border grid lg:grid-cols-3 sm:grid-cols-2 border-opacity-20 py-16 gap-10 px-20 rounded-3xl sm:bg-perk bg-dark_grey bg-opacity-35 lg:bg-bottom bg-center bg-no-repeat">
             {perksData.map((item, index) => (

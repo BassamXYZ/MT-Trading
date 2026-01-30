@@ -37,21 +37,21 @@ export const perksData: {
 }[] = [
     {
       icon: "/images/perks/icon-support.svg",
-      title: "عنوان",
-      text: "يمكن إضافة أي نص",
+      title: "أدوات تحليل متقدمة",
+      text: "تضم المنصة أكثر من 80 مؤشراً فنياً مدمجاً مع 21 إطاراً زمنياً يتراوح من دقيقة واحدة إلى شهر كامل.",
       space: "lg:mt-8",
     },
     {
       icon: "/images/perks/icon-community.svg",
-      title: "عنوان",
-      text: "يمكن إضافة أي نص",
-      space: "lg:mt-14",
+      title: "تداول آلي قوي",
+      text: "تتميز بلغة برمجة MQL5 المتطورة التي تتيح لك إنشاء روبوتات تداول مخصصة أو الاختيار من بين آلاف المؤشرات والروبوتات الجاهزة.",
+      space: "lg:mt-4",
     },
     {
       icon: "/images/perks/icon-academy.svg",
-      title: "عنوان",
-      text: "يمكن إضافة أي نص",
-      space: "lg:mt-4",
+      title: "تداول متعدد الأصول",
+      text: "توفر MetaTrader 5 إمكانية الوصول إلى أسواق متنوعة من مكان واحد",
+      space: "lg:mt-8",
     },
   ];
 
